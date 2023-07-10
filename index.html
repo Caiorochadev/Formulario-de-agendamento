@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caio Rocha">
+    <meta name="description" content="Formulario para agendamento para Base aérea de Recife">
+    <meta name="keywords" content="formulario, HTML, CSS, desenvolvimento">
+    <title>Agendamento SFARD</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+    <div id="logo">
+        <div id="logo-img">
+            <img class="barf" src="img/2_barf.png" alt="logo-barf">
+        </div>
+        <div id="logo-texto">
+            <span>Força Aérea Brasileira</span>
+            <h1>SEÇÃO DE FARDAMENTO <br></h1>
+            <span>Base Aérea de Recife</span>
+        </div>
+    </div>
+
+    <p class="dias">Dias de Atendimento: <br> Segunda-feira, Quarta-feira e Sexta-feira
+    </p>
+    <form action="https://api.sheetmonkey.io/form/fWQyLvQykgtVP8vfQqUH5J" method="post">
+        <fieldset>
+            <legend>PREENCHA COM ATENÇÃO</legend>
+            <table>
+                <tr>
+                    <td><label for="data">Agendamento</label></td>
+                    <td>
+                        <input id="agendamento" type="date" name="Date" autocomplete required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="posto">Posto</label></td>
+                    <td><input type="text" name="Posto" autocomplete required></td>
+                </tr>
+                <tr>
+                    <td><label for="nome">Nome de Guerra</label></td>
+                    <td><input type="text" name="Nome" autocomplete required></td>
+                </tr>
+                <tr>
+                    <td><label for="om">OM</label></td>
+                    <td><input type="text" name="Om" autocomplete required></td>
+                </tr>
+                <tr>
+                    <td><label for="turma">Turma</label></td>
+                    <td><input type="text" id="turma" name="Turma" autocomplete required></td>
+
+                </tr>
+                <tr>
+                    <td><label for="telefone">Telefone</label></td>
+                    <td><input type="number" id="telefone" name="Telefone" autocomplete required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="Email" autocomplete required></td>
+                </tr>
+                <tr>
+                    <td><label for="observacao">Observações</label></td>
+                    <td>
+                        <input type="text" id="observacao" name="Observacao" autocomplete
+                            placeholder="Observações, se necessário.">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <button type="submit" class="btn">Confirmar Agendamento</button>
+    </form>
+    <footer> Desenvolvedor CB SAD CAIO | Copyright © Julho/2022</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
